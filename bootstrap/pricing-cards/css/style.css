@@ -1,3 +1,16 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+i {
+    font-style: normal;
+}
+
+.main-title{
+    width: 100%;
+    text-align: center;
+}
+
+.badge-polecany{
+    font-size: 1rem;
+}
