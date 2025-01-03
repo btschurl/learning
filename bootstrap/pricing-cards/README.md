@@ -1,1 +1,1 @@
-Pricing tables project with slight modifications
+Pricing cards project with slight modifications
