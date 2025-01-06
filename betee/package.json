@@ -1,0 +1,17 @@
+{
+  "name": "betee-pl",
+  "version": "1.0.0",
+  "description": "Betee.pl",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded scss:css",
+  "sass-prod": "sass --no-source-map --style=compressed scss:css/minified"
+  },
+  "author": "Bartek Tschurl",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "bootstrap": "^5.3.3",
+    "sass": "^1.83.1"
+  }
+}
