@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass-dev": "sass --watch --update --style=expanded scss:css",
-    "sass-prod": "npm i && sass --no-source-map --style=compressed scss:css/minified"
+    "sass-prod": "npm i && sass --no-source-map --style=compressed scss/bootstrap.scss:css/minified/bootstrap.min.css && sass --no-source-map --style=expanded scss/fontawesome.scss:css/fontawesome.css && sass --no-source-map --style=compressed scss/style.scss:css/minified/style.min.css"
   },
   "author": "Bartek Tschurl",
   "license": "ISC",
