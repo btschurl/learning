@@ -5,6 +5,18 @@ $font-family-sans-serif: 'Open Sans', sans-serif;
 $primary: #c167ef;
 $secondary: #10bcee;
 $light: #f3f6f9;
-$dark: #2b3041;
+$dark: #0a0b0c;
+
+// Navbar
+$navbar-dark-color: #fff;
+$navbar-dark-hover-color: $secondary;
+
+// Buttons
+$button-radius: 50px;
+$btn-border-radius: $button-radius;
+$btn-border-radius-sm: $button-radius;
+$btn-border-radius-lg: $button-radius;
+
+$navbar-toggler-border-radius: 5px;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
