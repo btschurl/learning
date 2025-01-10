@@ -1,0 +1,156 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.score-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1, h2 {
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.p1-score, .p2-score {
+    font-size: 2rem;
+}
+
+.p1-score-title {
+    color: blue;
+}
+
+.p2-score-title {
+    color: red;
+}
+
+.p1-score {
+    color: blue;
+}
+
+.p2-score {
+    color: red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.btnPlayer1, .btnPlayer2, .btnReset {
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btnPlayer1 {
+  background-color: blue;
+  color: #ffffff;
+  border: 1px solid blue;
+}
+
+.btnPlayer1:hover {
+  background-color: #ffffff;
+  color: blue;
+}
+
+.btnPlayer2 {
+  background-color: red;
+  color: #ffffff;
+  border: 1px solid red;
+}
+
+.btnPlayer2:hover {
+  background-color: #ffffff;
+  color: red;
+}
+
+.btnReset {
+  background-color: green;
+  color: #ffffff;
+  border: 1px solid green;
+}
+
+.btnReset:hover {
+  background-color: #ffffff;
+  color: green;
+}
+
+.btn:active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #000000;
+  text-decoration: underline;
+}

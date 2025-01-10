@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dart Score Keeper</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1 class="title">Dart Score Keeper</h1>
+      <div class="score-container">
+        <div class="score-box">
+          <h2 class="p1-score-title">Player 1</h2>
+          <span class="p1-score">501</span>
+        </div>
+        <div class="score-box">
+          <h2 class="p2-score-title">Player 2</h2>
+          <span class="p2-score">501</span>
+        </div>
+      </div>
+      <form class="form">
+        <input
+          type="number"
+          class="input"
+          placeholder="Enter points"
+          min="0"
+          max="60"
+          required
+        />
+        <div class="btn-container">
+          <button class="btnPlayer1">P1 points</button>
+          <button class="btnReset">Reset</button>
+          <button class="btnPlayer2">P2 points</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <p>
+        Made with ❤️ by
+        <a href="https://github.com/btschurl" target="_blank">Bartek Tschurl</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
