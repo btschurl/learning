@@ -6,7 +6,6 @@ const input = document.querySelector(".input");
 const btnPlayer1 = document.querySelector(".btnPlayer1");
 const btnPlayer2 = document.querySelector(".btnPlayer2");
 const btnReset = document.querySelector(".btnReset");
-
 const players = {
     player1: {
         score: 501,
