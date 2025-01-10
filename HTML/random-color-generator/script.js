@@ -8,17 +8,7 @@ let randomColor = () => {
     return Math.floor(Math.random() * 255);
 };
 
-console.log(randomColor());
-
-btnRandomize.addEventListener("click", () => {
-    let rColor = randomColor();
-    let gColor = randomColor();
-    let bColor = randomColor();
-    color.textContent = `RGB: (${rColor}, ${gColor}, ${bColor})`;
-    document.body.style.backgroundColor = `rgb(${rColor}, ${gColor}, ${bColor})`;
-});
-
-body.addEventListener("click", () => {
+function copyColor() {
     navigator.clipboard.writeText(color.textContent);
     const tooltip = document.createElement("span");
     tooltip.classList.add("tooltip");
@@ -27,4 +17,13 @@ body.addEventListener("click", () => {
     setTimeout(() => {
         tooltip.remove();
     }, 500);
+}
+
+btnRandomize.addEventListener("click", () => {
+    let rColor = randomColor();
+    let gColor = randomColor();
+    let bColor = randomColor();
+    color.textContent = `RGB: (${rColor}, ${gColor}, ${bColor})`;
+    document.body.style.backgroundColor = `rgb(${rColor}, ${gColor}, ${bColor})`;
+    copyColor();
 });
