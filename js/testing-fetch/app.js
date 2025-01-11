@@ -16,8 +16,12 @@
 // Axios
 const chuckNorrisRandomJoke = async () => {
     const url = "https://api.chucknorris.io/jokes/random";
-    const res = await axios.get(url);
-    return res.data.value;
+    try {
+        const res = await axios.get(url);
+        return res.data.value;
+    } catch (err) {
+        console.log(err);
+    }
 }
 
 const jokeBox = document.querySelector(".joke");
