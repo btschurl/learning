@@ -37,15 +37,23 @@ const createGameElement = (game) => {
     const gameMetacritic = document.createElement("li");
     gameMetacritic.textContent = `Metacritic: ${game.metacritic}`;
 
-    if (game.metacritic) {
-        const metacriticLink = document.createElement("a");
-        metacriticLink.href = `https://www.metacritic.com/game/${game.slug}`;
-        metacriticLink.textContent = "URL";
-        gameMetacritic.appendChild(metacriticLink);
-    }
-
     gameParams.append(gameReleased, gameRating, gameMetacritic);
     gameBox.append(gameImg, gameTitle, gameParams);
+
+    // if (game.metacritic) {
+    //     const gameMetacriticLink = document.createElement("li");
+    //     const metacriticLink = document.createElement("a");
+    //     metacriticLink.href = `https://www.metacritic.com/game/${game.slug}`;
+    //     metacriticLink.textContent = "URL";
+    //     metacriticLink.target = "_blank";
+    //     metacriticLink.alt = "Metacritic Link";
+    //     gameMetacriticLink.appendChild(metacriticLink);
+    //     gameParams.appendChild(gameMetacriticLink);
+    // }
+
+    gameBox.addEventListener("click", () => {
+        window.open(`https://www.metacritic.com/game/${game.slug}`, "_blank");
+    });
 
     return gameBox;
 }
@@ -56,14 +64,22 @@ const displayGames = (games) => {
     games.forEach((game) => {
         if (game.metacritic) {
             results.appendChild(createGameElement(game));
-        } else {
-            console.log("No metacritic score");
         }
     });
 }
 
-searchButton.addEventListener("click", async (e) => {
-    e.preventDefault();
+const handleGameSearch = async (game) => {
     const games = await searchGames(searchInput.value);
     displayGames(games);
+}
+
+searchButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    handleGameSearch();
+});
+
+searchInput.addEventListener("keyup", (e) => {
+    if (e.key === "Enter") {
+        handleGameSearch();
+    }
 });

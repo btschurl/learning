@@ -4,21 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Finder</title>
+    <meta name="description" content="Find games by name from API" />
+    <meta name="keywords" content="game, finder, API" />
+    <meta name="author" content="Bartek Tschurl" />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Game Finder</h1>
-    <input type="text" id="search" placeholder="Search for a game" />
-    <button id="searchButton">Search games</button>
-    <div id="results">
-      <!-- <div class="game">
-        <img
-          src="https://cdn1.epicgames.com/undefined/offer/EGS_WarhorseStudios_KingdomComeDeliverance_S4-510x680-ec915782c8a2d6f1d64c028dd74a398f.jpg"
-          alt="Game Image"
-        />
-        <h2>Kingdom Come: Deliverance</h2>
-      </div> -->
-    </div>
+    <input
+      type="text"
+      id="search"
+      placeholder="Type a game name (e.g. 'The Witcher')"
+    />
+    <button id="searchButton">SEARCH GAMES</button>
+    <div id="results"></div>
+    <footer>
+      <p>
+        Made by
+        <a
+          href="https://github.com/btschurl"
+          alt="Bartek Tschurl"
+          target="_blank"
+          >Bartek Tschurl</a
+        >
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
   </body>
